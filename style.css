@@ -1,0 +1,318 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	color: #24292e;
+}
+
+a, a:hover{
+	text-decoration: none;
+}
+
+a{
+	color: #0366d6;
+}
+
+header{
+	z-index: 1000;
+	width: 100%;
+	line-height: 0;
+	display: flex;
+	align-items: center;
+	background-color: #24292e;
+	color: #fff;
+	justify-content: space-between;
+}
+.header-link svg{
+	margin-right: 16px;
+}
+.header-content{
+	padding: 12px 32px;
+	display: flex;
+	align-items: center;
+}
+
+.search{
+	background: none;
+	border: none;
+	padding: 0px 12px;
+	vertical-align: middle;
+}
+
+.search-box{
+	width: 242px;
+	height: 30px;
+	border-radius: 6px;
+	border: 1px solid #595959;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 8px;
+}
+
+.search::placeholder{
+	color: #f1f1f1;
+}
+
+.header-list li a{
+	padding: 0 8px;
+	display: flex;
+	align-items: center;
+	color: #fff;
+}
+
+.header-list a{
+	color: #24292e;
+}
+
+.nav-link svg{
+	padding-right: 10px;
+}
+
+.nav-link{
+	border-bottom: 1px solid #fff;
+}
+
+.nav-link:hover{
+	border-bottom: 1px solid rgba(0,0,0,.15);
+	transition: .3s;
+}
+.active{
+	font-weight: bold;
+	border-bottom: 1px solid #f9826c;
+}
+.header-list{
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.header-list a{
+	padding: 8px 16px;
+}
+
+.header-content:nth-child(2){
+	display: flex;
+	justify-content: flex-end;
+}
+
+.secondary-nav{
+	margin-top: 24px;
+	width: 100%;
+	position: sticky;
+	align-items: center;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.secondary-nav .header-list a li{
+	padding-bottom: 10px;
+}
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.row{
+	padding: 0 32px;
+	display: flex;
+	justify-content: center;
+}
+
+.col{
+	padding: 0 16px;
+	position: relative;
+}
+
+.col-3{
+	width: 25%;
+}
+.col-9{
+	width: 75%;
+}
+
+.profile-details{
+	position: relative;
+	top: -30px;
+}
+
+.profile img{
+	object-fit: cover;
+	max-width: 100%;
+	border-radius: 50%;
+	top: -25px;
+	z-index: 90;
+}
+
+.profile-details h3{
+	padding: 16px 0;
+	color: #586069;
+	font-weight: lighter;
+}
+
+.profile-details button{
+	margin-bottom: 16px;
+	padding: 5px 16px;
+	width: 100%;
+}
+button{
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	align-items: center;
+	padding: 5px 16px;
+	font-weight: 500;
+	white-space: nowrap;
+	margin: 0;
+	cursor: pointer;
+	border-radius: 6px;
+	border: 1px solid rgb(0,0,0,.15);
+	background-color: #fafbfc;
+	
+}
+
+.buttons{
+	display: flex;
+	justify-content: space-between;
+}
+
+.buttons button{
+	flex-grow: 1;
+}
+.buttons button:nth-child(2){
+	margin-left: 8px	
+}
+.buttons button:nth-child(3){
+	margin-left: 16px	
+}
+
+.repo p{
+	margin-bottom: 8px;
+}
+.repo-settings{
+	padding: 16px 0;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.repo-settings input{
+	width: 100%;
+	display: inline-block;
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 6px;
+	padding: 5px 0px;
+}
+
+.repo-settings input::placeholder{
+	padding: 0 12px;
+}
+.repo{
+	display: flex;
+	justify-content: space-between;
+	padding: 24px 0;
+	line-height: 1.7rem;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.star{
+	background-color: #fafbfc;
+	border: 1px solid #959da5;
+	border-radius: 6px;
+	padding: 3px 12px;
+	height: 28px;
+}
+
+.star svg{
+	margin-right: 4px;
+}
+
+.repo-details{
+	margin-top: 8px;
+}
+
+.repo-language-color{
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.html{
+	background-color: #e34c26;	
+}
+
+.css{
+	background-color: #563d7c;
+}
+
+.javascript{
+	background-color: #f1e05a;
+}
+
+footer{
+	margin-top: 40px;
+	padding: 40px;
+	border-top: 1px solid rgba(0,0,0,.1);
+	text-align: center;
+}
+footer span, footer a{
+	margin: 0px 8px;
+	text-align: center;
+}
+
+
+@media(max-width: 1024px){
+	.row{
+		margin: 0;
+	}
+}
+@media(min-width: 768px){
+	.repo-settings{
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.repo-settings input{
+		width: 100%;
+		margin-right: 16px;
+	}
+
+}
+@media(max-width: 768px){
+	.row{
+		padding: 16px;
+	}
+	.header-content:nth-child(2){
+		padding: 12px 0;
+	}
+}
+
+@media(max-width: 767px){
+	.col-3, .col-9{
+		width: 100%;
+		padding: 0px;
+	}
+
+	.row{
+		padding: 0 16px;
+	}
+	.secondary-nav{
+			display: none;
+		}
+
+	
+
+	.profile-details{
+		margin-top: 0;
+	}
+
+	.repo-settings input{
+		margin-bottom: 16px;
+	}
+	.header-content{
+		display: none;
+	}
+	.row{
+		flex-direction: column;
+	}
+
+}
