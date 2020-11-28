@@ -170,6 +170,14 @@ header{
 	align-items: center;
 	margin-right: 4px;
 }
+
+.follower-count{
+	margin-right: 4px;
+}
+
+.follower-count:nth-child(2){
+	margin-left: 4px;
+}
 .profile-details h3{
 	padding: 16px 0;
 	color: #586069;
@@ -212,7 +220,7 @@ button{
 	flex-grow: 1;
 }
 .buttons button:nth-child(2){
-	margin-left: 8px	
+	margin-left: 8px;
 }
 .buttons button:nth-child(3){
 	margin-left: 16px	
@@ -414,7 +422,6 @@ footer a{
 		padding: 0 16px;
 	}
 
-
 	.header-list li{
 		padding: 8px 0;
 		border-bottom: 1px solid grey;
@@ -500,18 +507,23 @@ footer a{
 	}
 
 	button{
-		padding: 3px 8px;
-		
+		padding: 5px 8px;
 	}
 
+	.buttons button:nth-child(3){
+		margin-left: 45px !important;
+	}
+
+}
+
+@media (max-width: 374px){
+	.avatar img{
+		width: 25%;
+	}
 	.buttons button:nth-child(2){
-		margin-left: 2px	
+		margin-left: 2px;	
 	}
 	.buttons button:nth-child(3){
-		margin-left: 4px	
-	}
-
-	.buttons{
-		justify-content: center;
+		margin-left: 4px !important;
 	}
 }
