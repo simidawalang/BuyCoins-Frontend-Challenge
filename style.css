@@ -63,7 +63,7 @@ header{
 	border-bottom: 1px solid #fff;
 	display: flex;
 	align-items: center;
-	padding: 8px 16px;
+	padding: 16px;
 }
 
 .nav-link:hover{
@@ -78,9 +78,7 @@ header{
 
 .secondary-nav{
 	margin-top: 24px;
-	padding: 8px 0;
 	width: 100%;
-	z-index: 999;
 	position: sticky;
 	top: 0;
 	background: #fff;
@@ -94,8 +92,9 @@ header{
 }
 
 .active{
+	z-index: 1000;
 	font-weight: 500;
-	border-bottom: 1px solid #f9826c;
+	border-bottom: 2px solid #f9826c;
 }
 
 .active span{
