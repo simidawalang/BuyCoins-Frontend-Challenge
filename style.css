@@ -97,11 +97,12 @@ header{
 
 .active span{
 	background: #d1d5da80;
-	padding: 0 6px;
+	display: flex;
+	align-items: center;
+	padding: 2px 5px 3px 5px;
 	border-radius: 50%;
 	margin-left: 4px;
 	font-size: 0.75em;
-	vertical-align: center;
 }
 .container{
 	max-width: 1280px;
@@ -155,6 +156,11 @@ header{
 	justify-content: center;
 	align-items: center;
 }
+
+.smiley span{
+	margin-left: 8px;
+}
+
 
 .followers{
 	display: flex;
@@ -248,6 +254,8 @@ button{
 	border-radius: 6px;
 	padding: 3px 12px;
 	height: 28px;
+	display: flex;
+	align-items: center;
 }
 
 .star svg{
@@ -326,6 +334,7 @@ footer span, footer a{
 		display: flex;
 		align-items: center;
 		padding: 0 8px;
+		color: #fff;
 	}
 
 	.repo-settings{
@@ -409,22 +418,31 @@ footer span, footer a{
 		border-bottom: 1px solid grey;
 	}
 
+	.header-list li:last-child{
+		border-bottom: 0px;
+	}
+
 	.large-screen{
 		display: none;
 	}
 	.search-box{
-		
+		width: 100%;
+		padding-right: 0;
 	}
 
-	.secondary-nav .col-9{
+	.search-box svg{
+		padding-right: 8px;
+	}
+
+	.secondary-nav.small-screen .col-9{
 		display: flex;
 		justify-content: center;
 		flex-direction: row;
-		font-size: 12px;
 	}
 
-	.nav-link{
-		padding: 8px;
+	.secondary-nav.small-screen{
+		display: flex;
+		overflow-x: auto;
 	}
 
 	.nav-link svg{
@@ -437,31 +455,28 @@ footer span, footer a{
 
 	.avatar{
 		margin: 2px 0 24px 0;
+		display: flex;
 	}
 
 	.avatar img{
 		width: 17%;
 	}
+
+	.avatar h3{
+		position: relative;
+		left: 20px;
+		float: right;
+	}
 	.smiley{
+		display: flex;
+		justify-content: flex-start;
 		position: relative;
 		border-radius: 6px;
 		right: 0;
 	}
 
-	.avatar h3{
-		float: right;
-	}
 	.profile-details h4{
 		margin: 16px 0;
-	}
-
-	.avatar{
-		display: flex;
-	}
-
-	.avatar h3{
-		position: relative;
-		left: 20px;
 	}
 
 	.repo{
@@ -473,4 +488,10 @@ footer span, footer a{
 	}
 
 
+}
+
+@media (max-width: 576px){
+	.secondary-nav.small-screen .container .row{
+		padding: 0;
+	}
 }
